@@ -11,11 +11,11 @@ export const useUserForm = (hasPasswordConfirm: boolean = false) => {
 					email: '',
 					password: '',
 					passwordConfirm: '',
-			  }
+		}
 			: {
 					email: '',
 					password: '',
-			  },
+		},
 		validationSchema: Yup.object(
 			hasPasswordConfirm
 				? {
@@ -34,11 +34,11 @@ export const useUserForm = (hasPasswordConfirm: boolean = false) => {
 						passwordConfirm: Yup.string()
 							.required('Required field')
 							.oneOf([Yup.ref('password')], 'Password must be the same'),
-				  }
+			}
 				: {
 						email: emailValidationSchema,
 						password: Yup.string().required('Required field'),
-				  },
+			},
 		),
 	};
 };
