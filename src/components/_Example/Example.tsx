@@ -1,23 +1,15 @@
-import React, { FC } from "react"
-import classNames from "classnames"
-import "./Example.pcss"
+import React, { FC } from 'react';
+import classNames from 'classnames';
+import './Example.pcss';
 
 interface IExample {
-  className?: string
+	className?: string;
 }
 
 const Example: FC<IExample> = (props) => {
-  const {
-    className,
-  } = props
+	const { className } = props;
 
-  return (
-    <div
-      className={classNames(className, "example")}
-    >
+	return <div className={classNames(className, 'example')}></div>;
+};
 
-    </div>
-  )
-}
-
-export default Example
+export default Example;
