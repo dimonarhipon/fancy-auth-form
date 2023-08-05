@@ -20,7 +20,7 @@ const userSlice = createSlice({
 		setUser(state, action: PayloadAction<IUser>) {
 			return action.payload;
 		},
-		logOutUser(state) {
+		logOutUser() {
 			return initialState;
 		},
 	},
