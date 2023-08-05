@@ -45,7 +45,7 @@
     "react-router-dom": "^6.3.0",
     "redux-persist": "^6.0.0",
     "typescript": "^4.6.4",
-    "vite": "^3.0.7",
+    "vite": "^3.2.7",
     "vite-plugin-svg-icons": "^2.0.1",
     "vitest": "^0.22.1",
     "yup": "^0.32.11"
