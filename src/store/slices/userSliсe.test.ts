@@ -20,7 +20,7 @@ describe('userSlice', () => {
 		expect(result).toEqual(initialState);
 	});
 
-	it("Should set user with 'setUser' action", () => {
+	it('Should set user with /"setUser/" action', () => {
 		const action = {
 			type: setUser.type,
 			payload: user,
@@ -31,7 +31,7 @@ describe('userSlice', () => {
 		expect(result).toBe(user);
 	});
 
-	it("Should log out user with 'logOut' action", () => {
+	it('Should log out user with /"logOut/" action', () => {
 		const loggedUser = user;
 		const action = { type: logOutUser.type };
 
